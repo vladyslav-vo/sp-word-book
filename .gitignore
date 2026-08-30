@@ -1,0 +1,22 @@
+node_modules/
+npm-debug.log*
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Test and tooling output
+coverage/
+.vite/
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# The production bundle is intentionally committed so the app can be used
+# directly without installing dependencies or running a build.
+!dist/
+!dist/index.html

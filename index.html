@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcards</title>
+  </head>
+  <body>
+    <script id="app-data" type="application/json">
+{
+  "schemaVersion": 4,
+  "settings": {
+    "display": {
+      "theme": "light",
+      "showExactWordLength": true
+    },
+    "scheduling": {
+      "learningIntervalsMinutes": {
+        "veryHard": 1,
+        "hard": 15,
+        "medium": 1440,
+        "easy": 2880,
+        "veryEasy": 5760
+      },
+      "reviewMultipliers": {
+        "hard": 1.2,
+        "medium": 2,
+        "easy": 2.7,
+        "veryEasy": 3.5
+      }
+    }
+  },
+  "statistics": { "daily": [] },
+  "cards": [
+    {
+      "id": "demo-cloze-1",
+      "type": "cloze",
+      "content": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              { "type": "text", "text": "Ich fahre " },
+              { "type": "text", "text": "nach", "marks": [{ "type": "cloze", "attrs": { "id": "7af1cec8-efe6-45c5-a1b6-1cd8a3aa5829", "groupId": "82259ee2-5756-40b3-b014-41683a44e68b" } }] },
+              { "type": "text", "text": " " },
+              { "type": "text", "text": "München", "marks": [{ "type": "bold" }] },
+              { "type": "text", "text": " mit " },
+              { "type": "text", "text": "einem", "marks": [{ "type": "cloze", "attrs": { "id": "faff1075-a7cf-46e7-a52d-da8158162653", "groupId": "2f930a18-6e8a-484b-98b5-4bcab887dbfb" } }] },
+              { "type": "text", "text": " " },
+              { "type": "text", "text": "Zug", "marks": [{ "type": "textStyle", "attrs": { "color": "#0088ff", "fontSize": null } }] },
+              { "type": "text", "text": "." }
+            ]
+          },
+          { "type": "paragraph" },
+          {
+            "type": "spoilerBlock",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  { "type": "hardBreak" },
+                  { "type": "text", "text": "fahren", "marks": [{ "type": "italic" }] },
+                  { "type": "hardBreak" },
+                  { "type": "text", "text": "f" },
+                  { "type": "text", "text": "ä", "marks": [{ "type": "underline", "attrs": { "color": "#ff0400" } }] },
+                  { "type": "text", "text": "hrt | f" },
+                  { "type": "text", "text": "u", "marks": [{ "type": "underline", "attrs": { "color": "#ff0400" } }] },
+                  { "type": "text", "text": "hr | ist gef" },
+                  { "type": "text", "text": "a", "marks": [{ "type": "underline", "attrs": { "color": "#ff0400" } }] },
+                  { "type": "text", "text": "hren" }
+                ]
+              }
+            ]
+          },
+          { "type": "paragraph" }
+        ]
+      },
+      "scheduling": { "phase": "new", "intervalMinutes": null, "dueAt": null, "lastReviewedAt": null, "reviewCount": 0, "lapseCount": 0, "lastSuggestedRating": null, "lastSelectedRating": null }
+    },
+    {
+      "id": "demo-basic-1",
+      "type": "basic",
+      "front": {
+        "type": "doc",
+        "content": [{
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "So " },
+            { "type": "text", "text": "sieht", "marks": [{ "type": "bold" }] },
+            { "type": "text", "text": " " },
+            { "type": "text", "text": "es", "marks": [{ "type": "italic" }] },
+            { "type": "text", "text": " vorne " },
+            { "type": "text", "text": "aus", "marks": [{ "type": "bold" }] },
+            { "type": "text", "text": "." }
+          ]
+        }]
+      },
+      "back": {
+        "type": "doc",
+        "content": [{
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "So " },
+            { "type": "text", "text": "sieht", "marks": [{ "type": "bold" }] },
+            { "type": "text", "text": " " },
+            { "type": "text", "text": "es", "marks": [{ "type": "italic" }] },
+            { "type": "text", "text": " hinten " },
+            { "type": "text", "text": "aus", "marks": [{ "type": "bold" }] },
+            { "type": "text", "text": "." }
+          ]
+        }]
+      },
+      "scheduling": { "phase": "new", "intervalMinutes": null, "dueAt": null, "lastReviewedAt": null, "reviewCount": 0, "lapseCount": 0, "lastSuggestedRating": null, "lastSelectedRating": null }
+    }
+  ]
+}
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
